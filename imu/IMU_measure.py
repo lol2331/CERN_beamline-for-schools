@@ -34,7 +34,7 @@ bus.write_byte_data(0x68, CONFIG, 0x03)
 bus.write_byte_data(0x68, GYRO_CONFIG, 0x10)
 bus.write_byte_data(0x68, ACCEL_CONFIG, 0x10)
 
-wb = load_workbook('C:\\Users\\Andrei\\OneDrive\\Documente\\imu\\imu.xlsx')
+wb = load_workbook('C:\\Users\\Andrei\\OneDrive\\Documente\\imu\\imu1.xlsx')
 sheet1 = wb["Sheet1"]
 sheet2 = wb["Sheet2"]
 
@@ -84,10 +84,10 @@ try:
         sheet2.append(sys.getsizeof(row1))
         sheet2.append(sys.getsizeof(row2))
 
-        wb.save('C:\\Users\\Andrei\\OneDrive\\Documente\\imu\\imu.xlsx')
+        wb.save('C:\\Users\\Andrei\\OneDrive\\Documente\\imu\\imu1.xlsx')
         time.sleep(5)
 
 
 finally:
-    wb.save('C:\\Users\\Andrei\\OneDrive\\Documente\\imu\\imu.xlsx')
+    wb.save('C:\\Users\\Andrei\\OneDrive\\Documente\\imu\\imu1.xlsx')
     print("Goodbye:)")
